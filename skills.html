@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .container {
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 40px auto;
+            grid-template-areas: "h h h h h h h h h h h h" "c c c c c c c c c c c c";
+        }
+        
+        .content {
+            grid-area: c;
+            text-align: center;
+        }
+        
+        body {
+            height: 125vh;
+            margin-top: 80px;
+            padding: 30px;
+            background-size: cover;
+            font-family: sans-serif;
+            background-image: url("pexels-darren-halos-5122006.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+        }
+        
+        .header {
+            grid-area: h;
+            background-color: black;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 5px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 25px 0 black;
+        }
+        
+        .header * {
+            display: inline;
+            margin-right: 40px;
+        }
+        
+        header li {
+            margin: 20px;
+        }
+        
+        .header li a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
+        p {
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+        
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 50px;
+        }
+        
+        img {
+            width: 80;
+            height: 80;
+            border-radius: 50%;
+            margin-right: 60px;
+        }
+        
+        ul * {
+            display: inline;
+            margin-right: 40px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="skills.html"><strong>MY SKILLS</strong></a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <p style="font-size: 35px">Languages I speak:</p><br>
+            <p><img src="images (1).png"><img src="css-3-logo.png"><img src="images (33).jpeg"><img src="46140125-da084900-c26d-11e8-8ea7-c45ae6306309.png"><img src="c-sharp-c-icon-456x512-9sej0lrz.png"></p><br>
+            <ul style="font-size: 35px">
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>C#</li>
+                <li>C++</li>
+            </ul>
+            <p style="font-size: 35px">Tools I use:</p><br>
+            <p><img src="Visual_Studio_Code_1.35_icon.svg.png"><img src="git-icon.png"><img src="images.png"></p><br>
+            <ul style="font-size: 35px">
+                <li>Visual Studio Code</li>
+                <li>Git</li>
+                <li>GitHub</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
