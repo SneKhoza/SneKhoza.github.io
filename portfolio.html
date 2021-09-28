@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title></title>
+    <style>
+        .container {
+            height: 100%;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 40px auto;
+            grid-template-areas: "h h h h h h h h h h h h" "c c c c c c c c c c c c";
+        }
+        
+        .content {
+            grid-area: c;
+            text-align: center;
+        }
+        
+        body {
+            height: 125vh;
+            margin-top: 80px;
+            padding: 30px;
+            background-size: cover;
+            font-family: sans-serif;
+            background-image: url("pexels-darren-halos-5122006.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+        }
+        
+        .header {
+            grid-area: h;
+            background-color: black;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 5px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 25px 0 black;
+        }
+        
+        .header * {
+            display: inline;
+            margin-right: 40px;
+        }
+        
+        header li {
+            margin: 20px;
+        }
+        
+        .header li a {
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="skills.html">MY SKILLS</a></li>
+                    <li><a href="portfolio.html"><strong>PORTFOLIO</strong></a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content"></div>
+    </div>
+</body>
+
+</html>
